@@ -1,0 +1,324 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333333;
+  font-family: 'Hedvig Letters Serif', serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  flex: 1;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 1rem;
+  padding-left: 5rem;
+  background-color: #282c34;
+  color: white;
+  border-bottom: .5px solid #000; 
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  position: relative;
+  font-weight: lighter;
+}
+
+
+.container {
+  background-color: #f8f8f8;
+  color: #333333;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+  background-color: #282c34;
+  margin-left: auto;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 15px;
+  position: relative;
+  font-weight: lighter;
+}
+
+.navbar a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background-color: #3498db;
+  transition: width 0.3s; 
+}
+
+.navbar a:hover:after,
+.navbar a:focus:after,
+.navbar a:active:after {
+  width: 100%;
+}
+
+.navbar a.initial:after {
+  width: 100%;
+  transition: none; 
+}
+
+
+h1, h2, h3 {
+  color: #000;
+}
+
+
+p {
+  margin-bottom: 16px;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+#avatar:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+
+a {
+  color: #3498db; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form {
+  width: 50%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form elements */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+button {
+  background-color: #666666;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button a {
+  color: #fff
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+  max-width: 1000px; /* Adjust the maximum width of the container */
+  margin: 0 auto; /* Center the container on the page */
+  margin-bottom: 5rem;
+}
+
+/* Style for each invisible square */
+.image-container {
+  width: 400px; /* Set the width of the invisible square */
+  height: 400px; /* Set the height of the invisible square */
+  margin: 10px; /* Adjust as needed for spacing between squares */
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; /* Add relative positioning to the image container */
+}
+
+/* Style for each individual image */
+.image-container img {
+  width: 100%; /* Make the images take up 100% of the container width */
+  height: 100%; /* Make the images take up 100% of the container height */
+  object-fit: cover; /* Maintain the aspect ratio and cover the container */
+  transition: opacity 0.3s ease; /* Add a transition effect for smooth hover changes */
+}
+
+/* Optional: Add hover effect for better user interaction */
+.image-container:hover img {
+  opacity: 0.3;
+  /* Add other transition effects as desired */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Increase the alpha value for a darker background */
+  color: white; /* Text color for the header */
+  opacity: 0; /* Hide the overlay by default */
+  transition: opacity 0.3s ease; /* Add a transition effect for smooth visibility changes */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.overlay h2 {
+  color: black;
+  margin-bottom: 10px; /* Adjust as needed for spacing between header and additional image */
+  transition: text-decoration 0.3s ease, color 0.3s ease; /* Add transition effect to text-decoration and color */
+}
+
+.overlay h2:hover {
+  color: #3498db; /* Change to the desired color on hover */
+}
+
+.overlay a {
+  text-decoration: none;
+}
+
+.overlay img {
+  width: 80px; /* Increase the width of the additional image */
+  height: 80px; /* Increase the height of the additional image */
+  border-radius: 50%; /* Add border-radius for a circular shape */
+  /* Add other styles as needed */
+}
+
+.overlay img:hover {
+  opacity: 100%;
+}
+
+
+.footer {
+  background-color: #282c34;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.footer img {
+  width: 30px; 
+  height: 50%; 
+  margin-left: 1rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 16px;
+  display: inline-block; 
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-left: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding-left: 1rem;
+  }
+
+  .navbar a {
+    margin-right: 10px;
+  }
+}
