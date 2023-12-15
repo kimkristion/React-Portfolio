@@ -1,2 +1,0 @@
-# Portfolio using React
-## Introduction
