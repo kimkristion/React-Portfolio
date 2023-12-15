@@ -13,7 +13,7 @@ const Projects = () => {
       </div>
 
       <div className="image-container">
-          <img src='./src/assets/dynamicScheduler.png' alt='weather application' />
+          <img src='/assets/dynamicScheduler.png' alt='weather application' />
             <div className="overlay">
               <Link to='https://kimkristion.github.io/Scheduling-Calendar/'><h2>Scheduling Calendar</h2></Link>
               <Link to='https://github.com/kimkristion/Scheduling-Calendar'><img src='./src/assets/githubLogo.png' alt='github overlay image' /></Link>
