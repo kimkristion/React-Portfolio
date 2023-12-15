@@ -1,11 +1,13 @@
 // This is a static page mocking an "About Us" section for our fake user data
+import avatar from 'src/assets/avatar.jpg';
+
 export default function AboutPage() {
     return (
       <div className="container pt-4">
         <h2>About Me</h2>
         
         <div className="avatarContainer">
-        <img id="avatar" src="./dist/assets/avatar.jpg" alt="photo of Kristion Kim"></img>
+        <img id="avatar" src={avatar} alt="photo of Kristion Kim"></img>
         </div>
         
         <p>Hello World! I&rsquo;m Kristion Kim, a soon-to-be certified Full-Stack developer eagerly awaiting my certification from the University of Oregon&rsquo;s Coding Bootcamp. My roots are firmly planted in Oregon&mdash; as I graduated Tigard High School in Tigard, Oregon.</p>
