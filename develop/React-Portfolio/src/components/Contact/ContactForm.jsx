@@ -1,12 +1,14 @@
 import { useState } from 'react';
 
 const ContactForm = () => {
+  // State variables to manage form input values and messages
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
+  // Function to validate form input
   const validateForm = (name, email, message) => {
     const errors = [];
   
@@ -26,9 +28,11 @@ const ContactForm = () => {
     return errors;
   };
 
+  // Function to handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
   
+    // Using the validate function to validate the user input
     const errors = validateForm(name, email, message);
   
     if (errors.length > 0) {
@@ -36,8 +40,10 @@ const ContactForm = () => {
       return;
     }
   
+    // Clear any previous err messages
     setErrorMessage('');
   
+    // Send form data to the server using the Fetch API
     const response = await fetch(`https://formspree.io/f/mwkdgrgg`, {
       method: 'POST',
       headers: {

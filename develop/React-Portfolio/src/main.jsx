@@ -1,3 +1,4 @@
+// Importing necessary modules from react-dom and react-router-dom
 import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
@@ -5,6 +6,7 @@ import {
 } from 'react-router-dom';
 import './index.css'
 
+// Importing the main App component and individual page components
 import App from './App.jsx'
 import HomePage from './pages/Home.jsx';
 import AboutPage from './pages/About.jsx';
@@ -13,6 +15,7 @@ import PortfolioPage from './pages/Portfolio.jsx';
 import ResumePage from './pages/Resume.jsx';
 import ErrorPage from './pages/Error.jsx';
 
+// Creating a BrowserRouter and defining the routes for the application
 const router = createBrowserRouter([
   {
     path: '/',
@@ -32,6 +35,7 @@ const router = createBrowserRouter([
   }
 ]);
 
+// Use ReactDom.createRoot to render the application with the RouterProvider
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 )
