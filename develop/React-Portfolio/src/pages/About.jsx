@@ -1,5 +1,5 @@
 // This is a static page mocking an "About Us" section for our fake user data
-import avatar from 'src/assets/avatar.jpg';
+import avatar from '/src/assets/avatar.jpg';
 
 export default function AboutPage() {
     return (
