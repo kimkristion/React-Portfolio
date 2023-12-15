@@ -5,7 +5,7 @@ export default function AboutPage() {
         <h2>About Me</h2>
         
         <div className="avatarContainer">
-        <img id="avatar" src="../assets/avatar.jpg" alt="photo of Kristion Kim"></img>
+        <img id="avatar" src="./dist/assets/avatar.jpg" alt="photo of Kristion Kim"></img>
         </div>
         
         <p>Hello World! I&rsquo;m Kristion Kim, a soon-to-be certified Full-Stack developer eagerly awaiting my certification from the University of Oregon&rsquo;s Coding Bootcamp. My roots are firmly planted in Oregon&mdash; as I graduated Tigard High School in Tigard, Oregon.</p>
