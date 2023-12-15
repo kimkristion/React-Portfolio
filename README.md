@@ -13,7 +13,7 @@ https://main--kristionkimportfolio.netlify.app/
 ![portfolio](<./assets/portfolioWebpage.png>)
 
 ## Credits 
-N/A
+Component hierarchy provided by the University of Oregons: Coding Bootcamp
 
 ## License
 No License Provided
