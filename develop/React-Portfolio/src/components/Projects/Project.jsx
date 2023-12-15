@@ -5,7 +5,7 @@ const Projects = () => {
     <div className="projects-container">
 
       <div className="image-container">
-      <img src='develop/React-Portfolio/dist//assets/javascriptQuiz.png' alt='javascript quiz' />
+      <img src='develop/React-Portfolio/dist/assets/javascriptQuiz.png' alt='javascript quiz' />
           <div className="overlay">
           <Link to='https://kimkristion.github.io/JavaScript-Quiz/'><h2>JavaScript Quiz</h2></Link>
             <Link to='https://github.com/kimkristion/JavaScript-Quiz'><img src='./src/assets/githubLogo.png' alt='github overlay image' /></Link>
